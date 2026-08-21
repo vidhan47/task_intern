@@ -30,11 +30,11 @@ A simple and interactive calculator built using **HTML, CSS, and JavaScript**. T
 
 
 Calculator/
-│
-├── index.html
-├── style.css
-├── script.js
-└── README.md
+ │
+ ├── index.html
+ ├── style.css
+ ├── script.js
+ └── README.md
 
 # How It Works #
 
