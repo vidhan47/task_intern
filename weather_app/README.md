@@ -1,37 +1,39 @@
 # Weather App
 
-A clean and responsive weather application built with React that provides real-time weather information for any city using the OpenWeather API.
+A clean, responsive weather application built with **React** that provides real-time weather information for cities around the world using the **OpenWeather API**.
 
-The interface dynamically adapts to the current weather conditions and time of day, including animated rain, snow, clouds, and other weather effects.
+The interface dynamically adapts to the current weather condition and time of day, featuring animated rain, snow, clouds, fog, and other visual effects.
 
 ## Features
 
 * Search weather by city
-* Real-time weather data
-* Temperature in Celsius
-* Weather condition and description
+* Real-time weather information
+* Temperature displayed in Celsius
+* Current weather condition and description
 * Humidity information
 * Wind speed
 * Dynamic weather icons
-* Day and night detection
-* Dynamic backgrounds based on weather and time
+* Automatic day/night detection
+* Dynamic backgrounds based on weather conditions
 * Animated weather effects
-* Responsive design for desktop and mobile
-* Error handling for invalid cities
-* Loading state while fetching data
+* Responsive design for desktop and mobile devices
+* Loading state while fetching weather data
+* Error handling for invalid city searches
 
 ## Tech Stack
 
-* React
-* JavaScript
-* CSS
-* Vite
-* OpenWeather API
+| Technology      | Purpose                                    |
+| --------------- | ------------------------------------------ |
+| React           | User interface and component architecture  |
+| JavaScript      | Application logic and API integration      |
+| CSS             | Styling, responsive layout, and animations |
+| Vite            | Development server and build tool          |
+| OpenWeather API | Real-time weather data                     |
 
 ## Project Structure
 
 ```text
-weather-app/
+weather_app/
 │
 ├── public/
 │
@@ -45,7 +47,6 @@ weather-app/
 │   ├── index.css
 │   └── main.jsx
 │
-├── .env
 ├── .env.example
 ├── .gitignore
 ├── index.html
@@ -56,55 +57,65 @@ weather-app/
 
 ## Getting Started
 
-### 1. Clone the repository
+### Prerequisites
+
+Make sure you have the following installed:
+
+* [Node.js](https://nodejs.org/)
+* npm
+* An OpenWeather API key
+
+### 1. Clone the Repository
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone https://github.com/vidhan47/task_intern.git
 ```
 
-### 2. Navigate to the project
+### 2. Navigate to the Weather App
 
 ```bash
-cd weather-app
+cd task_intern/weather_app
 ```
 
-### 3. Install dependencies
+### 3. Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 4. Get an OpenWeather API key
+### 4. Get an OpenWeather API Key
 
 Create an account on OpenWeather and generate an API key.
 
-### 5. Configure environment variables
+### 5. Configure Environment Variables
 
-Create a `.env` file in the project root:
+Create a `.env` file inside the `weather_app` directory:
 
 ```env
 VITE_WEATHER_API_KEY=your_openweathermap_api_key
 ```
 
-Do not share or commit your API key.
+**Important:** Never commit your `.env` file or expose your API key publicly.
 
-### 6. Start the development server
+The repository includes `.env.example` as a template.
+
+### 6. Start the Development Server
 
 ```bash
 npm run dev
 ```
 
-Open the local URL shown in your terminal.
+Vite will provide a local development URL in the terminal. Open that URL in your browser.
 
 ## Production Build
 
-To create a production build:
+Create a production build with:
 
 ```bash
 npm run build
 ```
 
-To preview the production build locally:
+Preview the production build locally:
 
 ```bash
 npm run preview
@@ -112,27 +123,30 @@ npm run preview
 
 ## How It Works
 
-1. The user enters a city in the search bar.
-2. React sends a request to the OpenWeather API.
-3. The API returns the city's current weather information.
-4. The application stores the response using React state.
-5. Weather information is displayed dynamically.
-6. The background and weather animations change according to the weather condition and time of day.
+1. The user enters a city name in the search bar.
+2. The application sends a request to the OpenWeather API.
+3. The API returns the current weather information.
+4. React stores the weather data using state.
+5. The weather card displays the returned information.
+6. The application determines the weather type and time of day.
+7. The background and animated effects update dynamically according to the current conditions.
 
 ## Environment Variables
 
-| Variable               | Description         |
-| ---------------------- | ------------------- |
-| `VITE_WEATHER_API_KEY` | OpenWeather API key |
+| Variable               | Description                                     |
+| ---------------------- | ----------------------------------------------- |
+| `VITE_WEATHER_API_KEY` | API key used to access OpenWeather weather data |
 
 ## Future Improvements
 
-* Current location weather using geolocation
-* Weather forecast for upcoming days
+* Current-location weather using browser geolocation
+* Multi-day weather forecasts
 * Search history
-* Temperature unit conversion
+* Celsius/Fahrenheit conversion
 * More detailed weather statistics
+* Sunrise and sunset information
 * Improved weather animations
+* Weather forecast charts
 
 ## License
 
