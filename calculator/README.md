@@ -212,6 +212,4 @@ Possible future improvements include:
 * Improved accessibility
 * Calculation animations
 
-## License
 
-This project is licensed under the **MIT License**.
