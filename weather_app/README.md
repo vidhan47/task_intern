@@ -148,6 +148,4 @@ npm run preview
 * Improved weather animations
 * Weather forecast charts
 
-## License
 
-This project is licensed under the MIT License.
